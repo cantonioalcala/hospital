@@ -1,6 +1,6 @@
 package com.worshop.hospital.entity;
 
-import com.worshop.hospital.util.Constans;
+import com.worshop.hospital.util.Constants;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -29,7 +29,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(schema = Constans.SCHEMA_DB, name = "DETALLE_CONSULTA")
+@Table(schema = Constants.SCHEMA_DB, name = "DETALLE_CONSULTA")
 public class ConsultationDetail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

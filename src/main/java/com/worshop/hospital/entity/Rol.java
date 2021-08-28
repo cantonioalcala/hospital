@@ -1,13 +1,12 @@
 package com.worshop.hospital.entity;
 
-import com.worshop.hospital.util.Constans;
+import com.worshop.hospital.util.Constants;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -30,7 +29,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(schema = Constans.SCHEMA_DB, name = "ROL")
+@Table(schema = Constants.SCHEMA_DB, name = "ROL")
 public class Rol implements Serializable {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)

@@ -2,6 +2,7 @@ package com.worshop.hospital.controller;
 
 import com.worshop.hospital.model.api.request.AddRolRequest;
 import com.worshop.hospital.service.RolService;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,12 +21,13 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author Cristhian
  */
-@RestController
 @Slf4j
+@RestController
+@AllArgsConstructor
 @RequestMapping(value = "/rol")
 public class RolController {
-    @Autowired
-    private RolService rolService;
+
+    private final RolService rolService;
 
     @PostMapping(value = "/", produces = "application/json", consumes = "application/json")
     private ResponseEntity<?> save(@RequestBody AddRolRequest addRolRequest) {

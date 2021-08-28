@@ -8,8 +8,6 @@ import com.worshop.hospital.service.RolService;
 import com.worshop.hospital.service.mapper.RolMapper;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.mapstruct.factory.Mappers;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -21,15 +19,13 @@ import org.springframework.stereotype.Service;
  *
  * @author Cristhian
  */
-@Service
-@AllArgsConstructor
 @Slf4j
+@AllArgsConstructor
+@Service
 public class RolServiceImpl implements RolService {
 
-    @Autowired
-    private RolRepository rolRepository;
-    @Autowired
-    private RolMapper rolMapper;
+    private final RolRepository rolRepository;
+    private final RolMapper rolMapper;
 
     @Override
     public AddRolDto addRol(AddRolRequest addRolRequest) {

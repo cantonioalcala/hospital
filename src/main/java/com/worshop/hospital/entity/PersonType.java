@@ -1,6 +1,6 @@
 package com.worshop.hospital.entity;
 
-import com.worshop.hospital.util.Constans;
+import com.worshop.hospital.util.Constants;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -27,7 +27,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(schema = Constans.SCHEMA_DB, name = "TIPO_PERSONA")
+@Table(schema = Constants.SCHEMA_DB, name = "TIPO_PERSONA")
 public class PersonType implements Serializable {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)

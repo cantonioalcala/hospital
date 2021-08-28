@@ -1,0 +1,14 @@
+server:
+  port: 9091
+  servlet:
+    context-path: /hospital/v1
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/workshop
+    password: 123456
+    username: postgres
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true

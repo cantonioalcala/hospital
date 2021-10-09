@@ -1,7 +1,7 @@
 package com.worshop.hospital.service;
 
-import com.worshop.hospital.model.api.dto.AddRolDto;
-import com.worshop.hospital.model.api.request.AddRolRequest;
+import com.worshop.hospital.entity.Rol;
+import java.util.List;
 
 /**
  * <p>
@@ -13,5 +13,11 @@ import com.worshop.hospital.model.api.request.AddRolRequest;
  * @author Cristhian
  */
 public interface RolService {
-    AddRolDto addRol(AddRolRequest addRolRequest);
+    Rol saveRol(Rol rol);
+
+    Boolean deleteRol(Integer id);
+
+    Rol findById(Integer id);
+
+    List<Rol> findAll();
 }

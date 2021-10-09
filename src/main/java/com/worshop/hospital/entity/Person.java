@@ -56,4 +56,7 @@ public class Person implements Serializable {
     @Column(name = "FOTO")
     private String photo;
 
+    public Person(Integer personId) {
+        this.personId = personId;
+    }
 }
